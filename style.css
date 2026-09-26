@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 20px;
+}
+
+#image-display {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    border: 3px dashed #666;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.preview {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+/* Hiệu ứng hiển thị trực quan khi hover hoặc focus qua phím Tab */
+.preview:hover,
+.preview:focus {
+    border-color: #0056b3;
+    transform: scale(1.05);
+    outline: 3px solid #ffbf47; /* Đảm bảo điểm viền rõ ràng cho người dùng bàn phím */
+}
