@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Khắc phục lỗi 1: Thêm phần tử title bắt buộc cho W3C -->
+    <title>Thư viện ảnh dễ tiếp cận của tôi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<!-- Sự kiện onload được kích hoạt khi trang tải xong -->
+<body onload="initializeGallery()">
+
+    <header>
+        <h1>Thư viện ảnh tương tác</h1>
+        <!-- Khắc phục lỗi 3: Sử dụng h2 ngay sau h1, không nhảy cấp sang h3 -->
+        <h2>Bộ sưu tập thiên nhiên phong cảnh</h2>
+    </header>
+
+    <main>
+        <!-- Vùng hiển thị ảnh phóng to và văn bản thay thế -->
+        <div id="image-display">
+            Rê chuột hoặc dùng phím Tab để chọn ảnh bên dưới.
+        </div>
+
+        <!-- Danh sách 6 hình ảnh -->
+        <div class="gallery">
+            <!-- Khắc phục lỗi 2: Đảm bảo TẤT CẢ các ảnh (kể cả ảnh thứ 3) đều có thuộc tính alt -->
+            <img class="preview" alt="Cánh rừng mùa thu với lá vàng rực rỡ" src="https://picsum.photos/id/10/300/200" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Dòng sông êm đềm chảy qua thung lũng" src="https://picsum.photos/id/11/300/200" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Bờ biển đá hoang sơ lúc hoàng hôn" src="https://picsum.photos/id/12/300/200" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Ngọn núi phủ đầy tuyết trắng dưới bầu trời xanh" src="https://picsum.photos/id/13/300/200" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Con đường nhỏ băng qua rừng thông xanh mát" src="https://picsum.photos/id/14/300/200" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+            <img class="preview" alt="Thác nước hùng vĩ đổ xuống từ trên cao" src="https://picsum.photos/id/15/300/200" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        </div>
+    </main>
+
+</body>
+</html>
